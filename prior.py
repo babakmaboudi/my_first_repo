@@ -14,6 +14,10 @@ class norm(complex_numbers):
     def __init__(self, *Args, **Kwargs):
         super().__init__(*Args, **Kwargs)
 
+
+    def compute_norm(self):
+        return np.sqrt( self.real**2 + self.imag**2 )
+
 class argument(complex_numbers):
     def __init__(self, *Args, **Kwargs):
         super().__init__(*Args, **Kwargs)
@@ -25,4 +29,4 @@ if __name__ == '__main__':
     number = argument( 1,2 )
     number.print()
 
-    print(number.compute_argument())
+    print('the norm is :{}'.format( number.compute_norm() ))
