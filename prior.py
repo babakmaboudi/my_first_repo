@@ -8,7 +8,7 @@ class complex_numbers(ABC):
         self.imag = imag_part
 
     def print(self):
-        print('{} + {}i'.format(self.real,self.imag))
+        print('the number is :{} + {}i'.format(self.real,self.imag))
 
 class norm(complex_numbers):
     def __init__(self, *Args, **Kwargs):
